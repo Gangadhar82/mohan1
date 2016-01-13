@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/vT_ai_questionLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white" />
+
+    <RadioGroup
+        android:id="@+id/vR_ai_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/vL_ai_multipleChoiseLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vL_ai_subjectiveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/vE_ai_subjectiveAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="start"
+            android:hint="Add Complaint Details"
+            android:inputType="textMultiLine"
+            android:minHeight="50dp"
+            android:padding="10dp" />
+    </LinearLayout>
+</LinearLayout>

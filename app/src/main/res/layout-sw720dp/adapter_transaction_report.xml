@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:gravity="center"
+    android:layout_marginTop="5dp"
+    android:minHeight="60dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/vT_atr_lblCommodityName"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_view_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Commodity Name"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/vT_atr_lblRCNumber"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_view_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Ration Card No."
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/vT_atr_lblSoldQty"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_view_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Sold Quantity"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/vT_atr_lblPriceQty"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_view_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Price Rs/Qty"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/vT_atr_lblTotalAmount"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_view_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Total Amount"
+        android:textColor="@color/black" />
+</LinearLayout>

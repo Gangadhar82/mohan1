@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vL_pm_menuGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:alpha=".95"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/vI_pm_homeButton"
+            android:layout_width="@dimen/plm_image_view_icon_width"
+            android:layout_height="@dimen/plm_image_view_icon_height"
+            android:layout_marginLeft="@dimen/plm_image_view_home_margin_left"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/burgermenu" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/plm_scroll_view_margin_top"
+            android:fadeScrollbars="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/plm_linear_padding_left"
+                android:paddingRight="@dimen/plm_linear_padding_right"
+                android:paddingStart="@dimen/plm_linear_padding_left">
+
+                <LinearLayout
+                    android:id="@+id/vL_plm_btnHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/plm_linear_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/plm_image_view_icon_width"
+                        android:layout_height="@dimen/plm_image_view_icon_height"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/home" />
+
+                    <TextView
+                        android:id="@+id/vT_plm_lblHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/plm_text_view_margin_left"
+                        android:layout_marginStart="@dimen/plm_text_view_margin_left"
+                        android:gravity="center"
+                        android:textSize="@dimen/plm_text_view_size"
+                        android:text="@string/home"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vL_plm_btnIssueRation"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/plm_linear_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/plm_image_view_icon_width"
+                        android:layout_height="@dimen/plm_image_view_icon_height"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mainpage_icon_issueration" />
+
+                    <TextView
+                        android:id="@+id/vT_plm_lblIssueRation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/plm_text_view_margin_left"
+                        android:layout_marginStart="@dimen/plm_text_view_margin_left"
+                        android:gravity="center"
+                        android:text="@string/issue_ration"
+                        android:textSize="@dimen/plm_text_view_size"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vL_plm_btnCommodity_Receiving"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/plm_linear_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/plm_image_view_icon_width"
+                        android:layout_height="@dimen/plm_image_view_icon_height"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mainpage_icon_commodity" />
+
+                    <TextView
+                        android:id="@+id/vT_plm_lblCommodityReceiving"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/plm_text_view_margin_left"
+                        android:layout_marginStart="@dimen/plm_text_view_margin_left"
+                        android:gravity="center"
+                        android:textSize="@dimen/plm_text_view_size"
+                        android:text="@string/commodity_receiving"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vL_plm_btnAadharSeeding"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/plm_linear_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/plm_image_view_icon_width"
+                        android:layout_height="@dimen/plm_image_view_icon_height"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mainpage_icon_aathar" />
+
+                    <TextView
+                        android:id="@+id/vT_plm_lblAadharSeeding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/plm_text_view_margin_left"
+                        android:layout_marginStart="@dimen/plm_text_view_margin_left"
+                        android:gravity="center"
+                        android:text="@string/aadhar_seeding"
+                        android:textSize="@dimen/plm_text_view_size"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vL_plm_btnReports"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/plm_linear_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/plm_image_view_icon_width"
+                        android:layout_height="@dimen/plm_image_view_icon_height"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mainpage_icon_reports" />
+
+                    <TextView
+                        android:id="@+id/vT_plm_lblReports"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/plm_text_view_margin_left"
+                        android:layout_marginStart="@dimen/plm_text_view_margin_left"
+                        android:gravity="center"
+                        android:textSize="@dimen/plm_text_view_size"
+                        android:text="@string/reports"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vL_plm_btnComplaintBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/plm_linear_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/plm_image_view_icon_width"
+                        android:layout_height="@dimen/plm_image_view_icon_height"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mainpage_icon_complaint" />
+
+                    <TextView
+                        android:id="@+id/vT_plm_lblComplaintBooking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/plm_text_view_margin_left"
+                        android:layout_marginStart="@dimen/plm_text_view_margin_left"
+                        android:gravity="center"
+                        android:textSize="@dimen/plm_text_view_size"
+                        android:text="@string/complaint_booking"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vL_plm_btnFieldInspection"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/plm_linear_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/plm_image_view_icon_width"
+                        android:layout_height="@dimen/plm_image_view_icon_height"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mainpage_icon_inspection" />
+
+                    <TextView
+                        android:id="@+id/vT_plm_lblFieldInspection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/plm_text_view_margin_left"
+                        android:layout_marginStart="@dimen/plm_text_view_margin_left"
+                        android:gravity="center"
+                        android:textSize="@dimen/plm_text_view_size"
+                        android:text="@string/field_inspection"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vL_plm_btnClosingBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/plm_linear_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/plm_image_view_icon_width"
+                        android:layout_height="@dimen/plm_image_view_icon_height"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mainpage_icon_closingbalance" />
+
+                    <TextView
+                        android:id="@+id/vT_plm_lblClosingBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/plm_text_view_margin_left"
+                        android:layout_marginStart="@dimen/plm_text_view_margin_left"
+                        android:gravity="center"
+                        android:textSize="@dimen/plm_text_view_size"
+                        android:text="@string/closing_balance"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

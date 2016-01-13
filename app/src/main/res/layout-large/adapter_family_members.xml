@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AdaptersRootLayout"
+    android:id="@+id/vL_afm_familyMembers">
+
+    <ImageView
+        android:id="@+id/vI_afm_selectedRow"
+        android:layout_width="@dimen/afm_image_view_width"
+        android:layout_height="@dimen/image_view_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/unselected"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/vT_afm_lblName"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_view_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start|center"
+        android:text="Name"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/vT_afm_lblAge"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_view_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start|center"
+        android:text="Age"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/vT_afm_lblGender"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_view_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start|center"
+        android:text="Gender"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/vT_afm_lblRelation"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_view_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start|center"
+        android:text="Relation"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/vT_afm_lblAadharStatus"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_view_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start|center"
+        android:text="Aadhar Status"
+        android:textColor="@color/black" />
+
+</LinearLayout>

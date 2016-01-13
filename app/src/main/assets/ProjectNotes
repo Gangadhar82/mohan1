@@ -1,0 +1,22 @@
+# Completed Services
+    * GET_LANGUAGES (LoginScreenActivity)
+    * GET_AGENT_AUTHENTICATE (LoginScreenActivity)
+    * GET_AGENT_DETAILS (LoginScreenActivity)
+    * GET_RATION_LIFTING_MEMBERS_DETAILS (IssueRationActivity)
+    * GET_ALLOCATION (HomeActivity)
+    * GET_SCHEME_DETAILS_FOR_RATION_CARD (IssueRationActivity)
+
+# Printer related packages and classes in this project under the commend EPSON PosPrinter
+    * In Manifest file the printer related tasks is added under the commend EPSON PosPrinter.
+    * The whole classes which is related to the printer are added in the package named posprinter.
+    * xml folder in the res directory.
+    * The string file contains the string values under the commend EPSON PosPrinter.
+    * The color file contains the color values under the commend EPSON PosPrinter.
+    * The following files are in drawable folder
+        - coffee.png
+        - store.png
+        - wmark.png
+    * Layout file are
+        - activity_main.xml
+        - activity_discovery.xml
+        - list_at.xml

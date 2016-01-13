@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vL_acm_familyMembers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="60dp"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/vI_acm_selectedRow"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/image_view_height"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:src="@drawable/ir_unselected" />
+
+
+    <TextView
+        android:id="@+id/vT_aci_lblCommodity"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".9"
+        android:gravity="start|center"
+        android:text="Commodity"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_view_size" />
+
+    <TextView
+        android:id="@+id/vT_aci_lblSchemeName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:gravity="start|center"
+        android:text="Scheme Name"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/vT_aci_lblFPSStock"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="start|center"
+        android:text="FPS Stock"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_view_size" />
+
+    <TextView
+        android:id="@+id/vT_aci_lblEligibleQTY"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Eligible QTY"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_view_size" />
+
+    <TextView
+        android:id="@+id/vT_aci_lblGivenQty"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Given Qty"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_view_size" />
+
+    <TextView
+        android:id="@+id/vT_aci_lblBalanceQty"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Balance Qty"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_view_size" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/vE_air_quantityForSale"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:padding="5dp"
+            android:textSize="@dimen/text_view_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Kgs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/vT_aci_lblPriceQty"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="price/Qty"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_view_size" />
+
+    <TextView
+        android:id="@+id/vT_aci_lblPrice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:text="price"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_view_size" />
+
+
+</LinearLayout>

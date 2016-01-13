@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_layout" />
+
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+        style="@style/RootLayoutScrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="80dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblPCNumber"
+                        style="@style/TitleTextViewStyle"
+                        android:text="@string/pending_challan_number" />
+
+                    <EditText
+                        android:id="@+id/vE_acd_challanNumber"
+                        style="@style/EditTextCustomStyle"
+                        android:layout_width="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblTCNumber"
+                        style="@style/TitleTextViewStyle"
+                        android:text="@string/truck_challan_number" />
+
+                    <EditText
+                        android:id="@+id/vE_acd_truckChallanNumber"
+                        style="@style/EditTextCustomStyle"
+                        android:layout_width="match_parent"
+                        android:inputType="number"
+                        android:hint="@string/hints_challan_number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vT_acd_btnGetDetails"
+                        style="@style/ButtonsCustomStyle"
+                        android:layout_width="match_parent"
+                        android:background="@color/green"
+                        android:text="@string/get_details" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vL_acd_truckDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/vT_acd_lbltruckDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:text="@string/truck_details"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/vT_acd_lblTChallenNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/truck_challan_number"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vT_acd_TChallenNumberValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12312414"
+                            android:textColor="@color/border"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vT_acd_lblSGCName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/state_godown"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vT_acd_SGCNameValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="322341234/Stategodown"
+                            android:textColor="@color/border"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vT_acd_lblDispatchDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/dispatch_date"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vT_acd_DispatchDateValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="23/10/15"
+                            android:textColor="@color/border"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/vT_acd_lblTransporterId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transporter_id"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vT_acd_TransporterIdValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12312/Dharam Singh"
+                            android:textColor="@color/border"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vT_acd_lblTruckNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/truck_number"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vT_acd_TruckNumberValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KA 03 KA 2312"
+                            android:textColor="@color/border"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vT_acd_lblDriverName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/driver_name"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vT_acd_DriverNameValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Devarsing"
+                            android:textColor="@color/border"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/vT_acd_lblMobileNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mobile_number"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+
+                            android:id="@+id/vT_acd_MobileNumberValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3215648972"
+                            android:textColor="@color/border"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vL_acd_contentsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/vT_acd_lblCommodityDetails"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/commodity_details"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblDONumber"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D.O No - "
+                        android:textColor="@color/white" />
+                    <TextView
+                        android:id="@+id/vT_acd_DONumberValue"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00000091"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblDODate"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="D.O Date - "
+                        android:textColor="@color/white" />
+                    <TextView
+                        android:id="@+id/vT_acd_DODateValue"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21-12-15"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblDOValidity"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="D.O Validity - "
+                        android:textColor="@color/white" />
+                    <TextView
+                        android:id="@+id/vT_acd_DOValidityValue"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21-12-15"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".2"
+                        android:gravity="center"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblCommodity"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/commodity"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblDOQty"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/doqty"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblQtyRcvd"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/qty_recvd"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblQtyInTruck"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/qty_in_truck"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblLossGain"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/loss_or_gain"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblBalance"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/balance"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vT_acd_lblQtyRcvdInTruck"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/qty_recvd_in_truck"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/vL_acd_commodityList"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:divider="@null"
+                    tools:listitem="@layout/adapter_commodity_details">
+                </ListView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vT_acd_btnUpdateStock"
+                style="@style/ButtonsCustomStyle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:background="@color/green"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:text="@string/update_stock"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

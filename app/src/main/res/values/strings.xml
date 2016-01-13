@@ -1,0 +1,264 @@
+<resources>
+    <!-- COMMON -->
+    <string name="app_name">FairPriceShop</string>
+    <string name="something_wrong">something wrong</string>
+
+    <!-- SERVICES CONSTANTS -->
+    <string name="server_local">http://10.103.6.36/pdsappapi/</string>
+    <string name="server_nic">http://MmadDev4AllProj.cloudapp.net/NIC.FPS.Service/</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_issue_ration">Issue Ration</string>
+    <string name="title_comodity_details">Commodity Details</string>
+    <string name="title_aadhar_seeding">Aadhar Seeding</string>
+    <string name="title_complaint_booking">Complaint Booking</string>
+    <string name="title_field_inspection">Field Inspection</string>
+    <string name="title_reports">Reports</string>
+    <string name="title_closing_balance">Closing Balance</string>
+
+    <!-- HINTS -->
+    <string name="hints_username">Username</string>
+    <string name="hints_password">Password</string>
+    <string name="hints_enter_otp">Enter OTP</string>
+    <string name="hints_select_language">Select Language</string>
+    <string name="hints_select">Select</string>
+    <string name="hints_month">January</string>
+    <string name="hints_challan_number">102312201210</string>
+    <string name="hints_enter_fps_code">Enter FPS Code</string>
+    <string name="hints_enter_rc_number">Enter Ration Card Number</string>
+    <string name="alloction_number_value">0032145</string>
+
+    <!-- ACTIVITIES -->
+    <!-- Login page -->
+    <string name="header_login_heading">Fair Price Shop Begin</string>
+    <string name="str_login_text">LOGIN</string>
+    <string name="str_finger_print_login">FINGER PRINT LOGIN</string>
+    <string name="str_or">OR</string>
+    <string name="str_submit">SUBMIT</string>
+
+
+    <!-- Home Screen -->
+    <string name="issue">issue</string>
+    <string name="ration">ration</string>
+    <string name="receiving">receiving</string>
+    <string name="complaint">complaint</string>
+    <string name="booking">booking</string>
+    <string name="field">field</string>
+    <string name="inspection">inspection</string>
+    <string name="aadhar">aadhar</string>
+    <string name="seeding">seeding</string>
+    <string name="closing">closing</string>
+    <string name="user">user</string>
+    <string name="preference">preference</string>
+
+    <!-- Aadhar Seeding Screen -->
+    <string name="ration_card_number">Ration Card Number</string>
+    <string name="get_details">GET DETAILS</string>
+    <string name="name_aadhar_seeding">Name</string>
+    <string name="age">Age</string>
+    <string name="aadhar_status">Aadhar Status</string>
+    <string name="Card_Number">Card Number - </string>
+    <string name="Card_Type">Card Type - </string>
+    <string name="Wavier_Count">Wavier Count - </string>
+
+    <!-- Commodity Details Screen -->
+    <string name="pending_challan_number">Pending Challan Number</string>
+    <string name="truck_challan_number">Truck Challan Number</string>
+    <string name="truck_details">Truck Details</string>
+    <string name="state_godown">State Godown Code/Name</string>
+    <string name="dispatch_date">Dispatch Date</string>
+    <string name="transporter_id">Transporter ID/Name</string>
+    <string name="truck_number">Truck Number</string>
+    <string name="driver_name">Driver Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="commodity_details">Commodity Details</string>
+    <string name="commodity">Commodity</string>
+    <string name="scheme_name">Scheme Name</string>
+    <string name="doqty">D.O.Qty</string>
+    <string name="qty_recvd">Qty Rcvd</string>
+    <string name="qty_in_truck">Qty In Truck</string>
+    <string name="loss_or_gain">Loss/Gain</string>
+    <string name="balance">Balance</string>
+    <string name="qty_recvd_in_truck">Qty Rcvd In Truck</string>
+    <string name="update_stock">UPDATE STOCK</string>
+
+    <!-- Issue Ration Screen -->
+    <string name="fps_stock_qty">FPS Stock Qty</string>
+    <string name="eligible_qty">Eligible Qty</string>
+    <string name="given_qty">Given Qty</string>
+    <string name="balance_qty">Balance Qty</string>
+    <string name="qty_for_sale">Qty For Sale</string>
+    <string name="price_or_qty">Price/Qty</string>
+    <string name="price">Price</string>
+    <string name="total">Total</string>
+    <string name="make_sale">MAKE SALE</string>
+    <string name="allocation_number">Allocation Number</string>
+
+    <!-- Complaint Booking Screen -->
+    <string name="complaint_list">Complaint List</string>
+    <string name="submit">SUBMIT</string>
+
+    <!-- Field Inspection Screen -->
+    <string name="observation_list">Observation List</string>
+
+    <!-- Closing Balance Screen -->
+
+    <!-- POPUPS -->
+    <!-- Constants on popup_family_members-->
+    <string name="member_details">Member Details</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="relation">Relation</string>
+    <string name="uid_aadhar_status">UID (Aadhar Status)</string>
+    <string name="enter_aadhar_no">Enter Aadhar Number</string>
+
+
+    <!-- FRAGMENTS -->
+    <!-- Constants on Operation Report Fragment-->
+    <string name="online_synchronized_report">Online Synchronized Report</string>
+    <string name="hardware_network_complaint">Hardware/Network Complaint</string>
+    <string name="network_downtime_report">Network Downtime Report</string>
+    <string name="report_type">Report Type</string>
+    <string name="fps_code">FPS Code</string>
+    <string name="hw_nw_complaint_network">Hardware/Network Complaint Network</string>
+    <string name="sync_id">Sync Id</string>
+    <string name="imei_no">IMEI #</string>
+    <string name="sync_activated">Sync Activated</string>
+    <string name="ip_address">IP Address</string>
+    <string name="date">Date</string>
+    <string name="sync_start">Sync Start</string>
+    <string name="sync_end">Sync End</string>
+    <string name="status">Status</string>
+    <string name="mode_of_sync">Mode of Sync.</string>
+    <string name="complaint_no">Complaint No</string>
+    <string name="complaint_by">Complaint By</string>
+    <string name="raised_date">Raised Date</string>
+    <string name="downtime_type">Downtime Type</string>
+    <string name="network_provider">Network Provider</string>
+    <string name="downtime_start">Downtime Start</string>
+    <string name="downtime_end">Downtime End</string>
+        <!-- Alert Messages -->
+    <string name="empty_fpscode">Please enter Shop Code</string>
+
+    <!-- Constants on Rationcard Details Fragment-->
+    <string name="daily_sales_report">Daily Sales Report</string>
+    <string name="weekly_sales_report">Weekly Sales Report</string>
+    <string name="monthly_sales_report">Monthly Sales Report</string>
+    <string name="age_yrs">Age - Yrs</string>
+    <string name="uid">UID</string>
+    <string name="rc_details">Ration Card Details</string>
+    <string name="dob">Date of Birth</string>
+    <string name="rc_type">RC Type</string>
+        <!-- Alert Messages -->
+    <string name="empty_ration_card_number">Please enter RationCard NumberS</string>
+
+    <!-- Constants on Stock Report Fragment-->
+    <string name="stock_balance_report">Stock Balance Report</string>
+    <string name="commodity_name">Commodity Name</string>
+    <string name="allocated_qty">Allocated Qty</string>
+    <string name="received_qty">Received Qty</string>
+    <string name="total_sold_qty">Total Sold Qty</string>
+    <string name="total_balance_qty">Total Balance Qty</string>
+
+    <!-- Constants on Transaction Report Fragment -->
+    <string name="select">Select</string>
+    <string name="format">Format</string>
+    <string name="sold_quantity">Sold Quantity</string>
+    <string name="price_rs_or_qty">Price Rs/Qty</string>
+    <string name="total_amount">Total Amount</string>
+
+    <!-- MENU -->
+    <!-- Constants on popup_left_menu-->
+    <string name="home">Home</string>
+    <string name="issue_ration">Issue Ration</string>
+    <string name="commodity_receiving">Commodity Receiving</string>
+    <string name="aadhar_seeding">Aadhar Seeding</string>
+    <string name="reports">Reports</string>
+    <string name="complaint_booking">Complaint Booking</string>
+    <string name="field_inspection">Field Inspection</string>
+    <string name="closing_balance">Closing Balance</string>
+
+    <!-- Constants on popup_logout-->
+    <string name="logout">Logout</string>
+    <string name="logout_prompt">Are you sure you want to log out?</string>
+    <string name="decline">DECLINE</string>
+    <string name="accept">ACCEPT</string>
+
+    <!-- Constants on popup_settings-->
+    <string name="settings">Settings</string>
+    <string name="select_language">Select Language</string>
+    <string name="printer_name">Printer Name</string>
+    <string name="enter_printer_name">Enter printer name</string>
+    <string name="cancel">CANCEL</string>
+    <string name="apply_changes">APPLY CHANGES</string>
+
+    <!-- Constants on popup_settings_menu-->
+    <string name="user_preferences">User Preferences</string>
+
+    <!-- EPSON PosPrinter -->
+
+    <string name="app_title">ePOS2 Printer</string>
+    <string name="btn_discovery">Discovery</string>
+    <string name="title_target">Target</string>
+    <string name="title_printerseries">Printer Series</string>
+    <string name="title_lang">Lang</string>
+    <string name="btn_samplereceipt">Sample Receipt</string>
+    <string name="btn_samplecoupon">Sample Coupon</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_restart">Restart</string>
+    <string name="title_activity_discovery">DiscoveryActivity</string>
+    <string name="title_printerlist">Printer List</string>
+    <string name="default_target">TCP:192.168.192.168</string>
+    <string name="title_warnings">Printer Warnings</string>
+    <string name="print_job_id">ABC123</string>
+    <string name="title_err_code">Error Code</string>
+    <string name="title_err_method">Method</string>
+    <string name="title_msg_result">Result</string>
+    <string name="title_msg_description">Description</string>
+    <string name="printerseries_m10">TM-m10 Series</string>
+    <string name="printerseries_m30">TM-m30 Series</string>
+    <string name="printerseries_p20">TM-P20 Series</string>
+    <string name="printerseries_p60">TM-P60 Series</string>
+    <string name="printerseries_p60ii">TM-P60II Series</string>
+    <string name="printerseries_p80">TM-P80 Series</string>
+    <string name="printerseries_t20">TM-T20 Series</string>
+    <string name="printerseries_t70">TM-T70 Series</string>
+    <string name="printerseries_t81">TM-T81 Series</string>
+    <string name="printerseries_t82">TM-T82 Series</string>
+    <string name="printerseries_t83">TM-T83 Series</string>
+    <string name="printerseries_t88">TM-T88 Series</string>
+    <string name="printerseries_t90">TM-T90 Series</string>
+    <string name="printerseries_t90kp">TM-T90KP Series</string>
+    <string name="printerseries_u220">TM-U220 Series</string>
+    <string name="printerseries_u330">TM-U330 Series</string>
+    <string name="printerseries_l90">TM-L90 Series</string>
+    <string name="printerseries_h6000">TM-H6000 Series</string>
+    <string name="lang_ank">ANK</string>
+    <string name="lang_japanese">JAPANESE</string>
+    <string name="lang_chinese">CHINESE</string>
+    <string name="lang_taiwan">TAIWAN</string>
+    <string name="lang_korean">KOREAN</string>
+    <string name="lang_thai">THAI</string>
+    <string name="lang_southasia">SOUTH ASIA</string>
+    <string name="action_settings">Settings</string>
+    <string name="handlingmsg_warn_receipt_near_end">Roll paper is nearly end.\n</string>
+    <string name="handlingmsg_warn_battery_near_end">Battery level of printer is low.\n</string>
+    <string name="handlingmsg_err_no_response">Please check the connection of the printer and the mobile terminal.\nConnection get lost.\n</string>
+    <string name="handlingmsg_err_cover_open">Please close roll paper cover.\n</string>
+    <string name="handlingmsg_err_receipt_end">Please check roll paper.\n</string>
+    <string name="handlingmsg_err_paper_feed">Please release a paper feed switch.\n</string>
+    <string name="handlingmsg_err_autocutter">Please remove jammed paper and close roll paper cover.\nRemove any jammed paper or foreign substances in the printer, and then turn the printer off and turn the printer on again.\n</string>
+    <string name="handlingmsg_err_need_recover">Then, If the printer doesn\'t recover from error, please cycle the power switch.\n</string>
+    <string name="handlingmsg_err_unrecover">Please cycle the power switch of the printer.\nIf same errors occurred even power cycled, the printer may out of order.</string>
+    <string name="handlingmsg_err_overheat">Please wait until error LED of the printer turns off. \n</string>
+    <string name="handlingmsg_err_head">Print head of printer is hot.\n</string>
+    <string name="handlingmsg_err_motor">Motor Driver IC of printer is hot.\n</string>
+    <string name="handlingmsg_err_battery">Battery of printer is hot.\n</string>
+    <string name="handlingmsg_err_wrong_paper">Please set correct roll paper.\n</string>
+    <string name="handlingmsg_err_battery_real_end">Please connect AC adapter or change the battery.\nBattery of printer is almost empty.\n</string>
+    <string name="handlingmsg_err_offline">Printer is offline.\n</string>
+
+    <!-- Receipt ration taken -->
+
+    <string name="receipt_header"> \t Department of Food, Civil \n \t Supplies and Consumer Affairs</string>
+</resources>

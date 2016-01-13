@@ -1,0 +1,111 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:windowBackground">@null</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="settingsMenuAnimations">
+        <item name="@android:windowEnterAnimation">@anim/slide_down</item>
+        <item name="@android:windowExitAnimation">@anim/slide_up</item>
+    </style>
+
+    <style name="leftMenuAnimations">
+        <item name="@android:windowEnterAnimation">@anim/slide_right</item>
+        <item name="@android:windowExitAnimation">@anim/slide_left</item>
+    </style>
+
+    <style name="background">
+        <item name="android:background">@drawable/home_background</item>
+    </style>
+    <style name="LayoutBaseStyle" parent="background">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="HomeRootLinearLayoutStyle" parent="LayoutBaseStyle">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RootLayoutScrollView" parent="LayoutBaseStyle">
+        <item name="android:fillViewport">true</item>
+    </style>
+
+    <style name="CommonTextStyle"></style>
+
+    <style name="SpinnerVerticalRootLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TileLayoutStyle">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:minHeight">60dp</item>
+    </style>
+
+    <style name="AdaptersRootLayout">
+        <item name="android:layout_width">match_parent</item>'
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">60dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <!-- TextViews Styles -->
+    <style name="TitleTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/title_text_views_size</item>
+    </style>
+
+    <!-- Buttons Styles -->
+
+    <style name="ButtonsCustomStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/buttons_text_size</item>
+    </style>
+
+    <!-- EditText Style -->
+
+    <style name="EditTextCustomStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+    </style>
+
+</resources>
